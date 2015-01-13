@@ -38,7 +38,7 @@
 						success: function(data) {
 							console.log("Response (google):");
 							console.log(data);
-							jQuery("<img src='"+data.picture+"' />");
+							jQuery(body).append(jQuery("<img src='"+data.picture+"' />"));
 							$(".loader-hideOnLoad").hide();
 						}
 					});
