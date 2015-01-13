@@ -10,6 +10,9 @@
 	</head>
 	<body>
 		<button id="doClick">Click Me!</button>
+		<br/>
+		<button id="doLogout">Log Me Out!</button>
+		<hr/>
 		<script type="text/javascript">
 			jQuery(document).ready(function(){	
 				JSO.enablejQuery($);
@@ -24,6 +27,10 @@
 				});
 
 				jso.callback();
+
+				function doLogout() {
+					jso.wipeTokens();
+				}
 
 				function doButton() {
 					jso.ajax({
