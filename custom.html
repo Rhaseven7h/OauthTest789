@@ -37,7 +37,8 @@
 						dataType: 'json',
 						success: function(data) {
 							console.log("Response (google):");
-							console.log(data.picture);
+							console.log(data);
+							jQuery("<img src='"+data.picture+"' />");
 							$(".loader-hideOnLoad").hide();
 						}
 					});
